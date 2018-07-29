@@ -3,13 +3,13 @@
 $config = array();
 $config['os'] = (DIRECTORY_SEPARATOR == '\\') || (strtolower(substr(PHP_OS, 0, 3)) === 'win') ? 'windows' : 'linux';
 $config['dev'] = false;
-$config['use_print'] = true;
-$config['use_qr'] = true;
+$config['use_print'] = false;
+$config['use_qr'] = false;
 
 // FOLDERS
 // change the folders to whatever you like
-$config['folders']['images'] = 'images';
-$config['folders']['thumbs'] = 'thumbs';
+$config['folders']['images'] = '/var/www/html/images';
+$config['folders']['thumbs'] = '/var/www/html/thumbs';
 $config['folders']['qrcodes'] = 'qrcodes';
 $config['folders']['print'] = 'print';
 
